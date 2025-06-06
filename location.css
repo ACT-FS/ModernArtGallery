@@ -1,0 +1,176 @@
+header.map {
+  position: relative;
+}
+header.map img.map-mobile {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  header.map img.map-mobile {
+    display: none;
+  }
+}
+header.map img.map-tablet {
+  width: 100%;
+  display: none;
+}
+@media (min-width: 768px) {
+  header.map img.map-tablet {
+    display: block;
+  }
+}
+@media (min-width: 768px) and (min-width: 1200px) {
+  header.map img.map-tablet {
+    display: none;
+  }
+}
+header.map img.map-desktop {
+  width: 100%;
+  display: none;
+}
+@media (min-width: 1200px) {
+  header.map img.map-desktop {
+    display: block;
+  }
+}
+
+.button-black {
+  display: block;
+  padding: 26px 25px 25px 30px;
+  background-color: #151515;
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: "Big Shoulders", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3.636px;
+  transition: background-color 0.7s ease;
+}
+
+header.map div.button {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+header.map div.button:hover a img.arrow-right {
+  background-color: #151515;
+  transition: background-color 1s ease;
+}
+header.map div.button:hover a.button-black {
+  background-color: #d5966c;
+  transition: background-color 1s ease;
+}
+@media (min-width: 768px) {
+  header.map div.button {
+    top: 0;
+    left: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  header.map div.button {
+    top: 0;
+    left: 100px;
+  }
+}
+header.map div.button img.arrow-right {
+  background-color: #d5966c;
+  padding: 24px;
+  display: block;
+}
+
+section.location {
+  padding: 48px 16px 56px 16px;
+  background-color: #151515;
+}
+@media (min-width: 768px) {
+  section.location {
+    padding: 85px 40px;
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    gap: 90px;
+  }
+}
+@media (min-width: 1200px) {
+  section.location {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+section.location h1 {
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 48px;
+}
+section.location h2 {
+  font-family: "Big Shoulders", sans-serif;
+  color: #d5966c;
+  font-size: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+section.location p {
+  font-family: "Outfit", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 28px;
+}
+section.location p.country {
+  margin-bottom: 20px;
+}
+
+footer.footer-location {
+  background-color: #d5966c;
+}
+footer.footer-location div.footer {
+  padding: 48px 24px;
+}
+@media (min-width: 768px) {
+  footer.footer-location div.footer {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 56px;
+  }
+}
+@media (min-width: 1200px) {
+  footer.footer-location div.footer {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+footer.footer-location div.footer img {
+  width: 110px;
+  margin-bottom: 38px;
+}
+footer.footer-location div.footer p {
+  font-family: "Outfit", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #151515;
+  margin-bottom: 38px;
+}
+footer.footer-location div.footer div.social-media {
+  display: flex;
+  gap: 20px;
+}
+footer.footer-location div.footer div.social-media img {
+  width: 20px;
+  margin: 0;
+}
+
+html * {
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  overflow-x: hidden;
+}
